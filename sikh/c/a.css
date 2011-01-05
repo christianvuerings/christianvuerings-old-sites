@@ -1,0 +1,35 @@
+/* CSS van sikhs */
+
+/* margin:0 en pading:0 */
+body, html, h1, h2, p, ul, li {margin:0;}
+
+
+/* font van de hele site */
+body {font: 11px/16px 'Lucida Grande', Verdana, Sans-Serif; background-color:#000; text-align: justify;}
+
+/* h1, h2, h3 */
+h1, h2, h3 {font-family: trebuchet ms, arial, sans-serif; text-transform: lowercase; font-weight: normal;}
+h1 {font-size: 2em; padding-top:68px; padding-bottom:2px; padding-left:2px; background:#c5dbA7}
+h2 {font-size: 1.6em; margin-top:1px; padding-bottom:2px; padding-left:2px;}
+h3 {font-size: 1.3em; background:#808e6c}
+
+/* tekst */
+.tekst {text-align: justify; margin:2px;}
+a:hover, a:active, a:visited, a:link {text-decoration:none; color:#000;}
+#footer a:hover, a:active, a:visited, a:link {color:#ccc;}
+
+/* ul en li */
+ul  {list-style-type:none;}
+#menu ul {padding:.4em 0; margin:0; margin-top:1px; color:#fff; text-align:center;}
+#menu ul li {display:inline;}
+#menu ul li a{text-decoration:none; background-color:#808e6c; color:#fff; padding:.2em 1em; border:1px solid #fff;}
+#menu ul li a:hover {background-color:#8f866d; color:#fff;}
+#hoofdlijst ul {margin:0 0 10px 0; padding:2px;}
+#hoofdlijst li {margin:0; padding:1px;}
+#hoofdlijst li a {color:#000; font-weight:bold}
+#hoofdlijst li a:hover {color:#000; font-weight:bold; background-color:#b5aa8a;}
+
+/* divs */
+#all {margin-left:auto; margin-right:auto; background-color:#fff; border-color:#1f1f1f; border-style:solid;}
+#menu {background-color:#a3b58a;}
+#footer {padding-left:2px; margin-top:6px; background-color:#808e6c; text-align:center;}
