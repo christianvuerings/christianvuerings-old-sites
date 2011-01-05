@@ -1,0 +1,201 @@
+/************************************************************
+Title:     denbuzze's stylesheet
+Author:    Christian Vuerings, vueringschristian@gmail.com
+Updated:   24-12-2005
+************************************************************/
+
+/*basics*/
+body, html, h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+	}
+body, html {
+	border: 0;
+	background-color:#a0b9d0;
+	background-image : url(../i/b.gif);
+	background-repeat : repeat-x;
+	}
+body {
+	padding-bottom: 30px;
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	line-height: 1.6em;
+	}
+img {
+	border-style: none;
+	}
+a, p, li {
+	text-decoration:none;
+	color:#000000;
+	font-size: 11px;
+	}
+.slant {
+	font-style: italic;
+	}
+	
+/*all*/
+#all {
+	width: 770px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+#mainbox {
+	float : left;
+	width : 760px;
+	height : auto;
+	background-color : white;
+	padding : 5px;
+	text-align : left;
+	}
+
+/*header*/
+#header {
+	width: 760px;
+	height: 60px;
+	background-image: url(../i/h.gif);
+	}
+
+/*menu*/
+#menu ul, #footerleft ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none
+	}
+#menu li {
+	float : left;
+	width : 100px;
+	height : 23px;
+	background-color : white;
+	background-image : url(../i/mb.gif);
+	background-repeat : no-repeat;
+	text-align : center;
+	font-size : 11px;
+	font-weight : bold;
+	color : white;
+	}
+#menu li a {
+	color : white;
+	text-decoration : none;
+	}
+#menu li a:hover {
+	color : #cccc99;
+	text-decoration : none;
+	}
+
+/*ads*/
+#ads {
+	float: right;
+	margin-top: 5px;
+	}
+
+/*content*/
+#content, #contentb {
+	float: left;
+	}
+#contentb {
+	width:760px;	
+	}
+h1 {
+	height: 35px;
+	width: 300px;
+	font-size: 12px;
+	color: #fff;
+	background-color: #3b85ca;
+	}
+h2 {
+	font-size: 12px;
+	margin-top: 4px;
+	margin-bottom: 0.5px;
+	}
+.boxtitle {
+	width: 500px;
+	height: 35px;
+	background-color: #3b85ca;
+	background-image: url(../i/t.gif);
+	background-repeat: no-repeat;
+	margin-top: 5px;
+	}
+.title {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: white;
+	padding-left: 30px;
+	padding-top: 5px;
+	}
+.boxcontent a {
+	color : #000;
+	}
+.boxcontent a:hover {
+	color : #666666;
+	}
+.boxcontent img {
+	border: 2px solid #fff;
+	}
+.boxcontent img:hover {
+	border: 2px solid #3b85ca;
+	}
+.boxcontent table {
+	border: 2px solid #3b85ca;
+	margin-top: 5px;
+	}
+.boxcontent table tr td {
+	padding: 0;
+	margin: 0;
+	}
+.news, .tuts {
+	font-size: 11px;
+	line-height: 1.3em;
+	}
+.news {
+	text-align: justify;
+	width: 500px;
+	}
+.tuts li {
+	margin:0;
+	padding:0;
+	}
+
+/*footer*/
+#footer {
+	float: left;
+	width: 100%;
+	background-color: #3b85ca;
+	margin-top: 5px;
+	}
+#footerleft li {
+	float: left;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: white;
+	}
+.footspc  {
+	margin-left: 5px;
+	margin-right: 5px;
+	}
+#footerleft a {
+	text-decoration : none;
+	color : white;
+	}
+#footerleft a:hover {
+	text-decoration : none;
+	color : #cccc99;
+	}
+#footerright {
+	float : right;
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	font-weight : normal;
+	color : #8eaeb9;
+	}
+#footerright a {
+	text-decoration : none;
+	color : #8eaeb9;
+	font-weight : bold;
+	}
+#footerright a:hover {
+	text-decoration : none;
+	color : #ffae00;
+	font-weight : bold;
+	}
