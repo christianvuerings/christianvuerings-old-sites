@@ -1,0 +1,43 @@
+/* CSS Internship - Christian Vuerings */
+/* General */
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font:90%/160% Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+}
+img {
+	border:0;	
+}
+acronym, abbr {
+	border-bottom:1px dotted #919191;
+	cursor:help;
+}
+a:hover{
+	color: #cf5200;
+}
+h1 {
+	font-size: 170%;	
+}
+h2 {
+	font-size: 150%;	
+}
+h3 {
+	font-size: 120%;
+}
+/* Wrapper */
+#wrapper {
+	margin: 0 auto;
+	text-align: left;
+	width: 900px;
+}
+/* Weeks */
+#weeks {
+	width: 710px;	
+}
+#weeks h3{
+	float: left;
+}
+/* #CF5200 */

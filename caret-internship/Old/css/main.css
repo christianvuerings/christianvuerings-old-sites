@@ -1,0 +1,75 @@
+/* Made by Christian Vuerings */
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+body {
+	color: #999;
+	background: #fff url(../images/bg.jpg) repeat-y;
+	font: 100%/120% 'Lucida Grande', Geneva, Arial, Trebuchet, Verdana, Helvetica, sans-serif; 
+	font-size: 13px;
+	
+}
+acronym, abbr {
+	cursor: help;
+	border-bottom: 1px dotted #919191;
+}
+hr {
+	height: 1px;
+	border-top: 1px solid #dbdbdb;
+	border-right: 0;
+	border-bottom: 0;
+	border-left: 0;
+	margin: 20px 0;
+}
+/* Content */
+#content {
+	width: 580px;
+	margin-left: 350px;
+	padding: 70px 0px 40px 40px;
+}
+#content p {
+	margin-bottom: 15px;
+}
+#content p.strapline {
+	color: #717171;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-size: 22px;
+	line-height: 30px;
+	
+}
+#content .strapline em {
+	color: #575757;
+	text-decoration: none;
+	font-style: normal;
+}
+#content h2 {
+	font-size: 22px;
+	line-height: 25px;
+	font-weight: normal;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#content h3 {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: normal;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	display: block;
+	color: #a4a4a4;
+	border-bottom: 1px solid #dbdbdb;
+	padding-bottom: 4px;
+}
+/* Logo */
+#logo h1 {
+	display: none;
+}
+#logo {
+	display: block;
+	position: fixed;
+	background: url(../images/logo_small.png) no-repeat top left;
+	top: 70px;
+	left: 131px;
+	height: 92px;
+	width: 87px;
+}

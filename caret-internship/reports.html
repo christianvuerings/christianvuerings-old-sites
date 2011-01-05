@@ -1,0 +1,700 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="nl" xml:lang="nl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="description" content="Information about the internship of Christian Vuerings at CARET." />
+	<meta name="keywords" content="Christian Vuerings, intership, CARET, Cambridge" />
+	
+	<link type="text/css" rel="stylesheet" href="css/main.css" media="screen" />
+
+	<title>Christian Vuerings // reports</title>
+</head>
+<body>
+	<div id="header">
+		<h1><span>Christian Vuerings</span></h1>
+	</div>
+	<div id="wrapper">
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Portfolio</a></li>
+				<li class="active"><a href="reports.html">Weekly reports</a></li>
+				<li><a href="links.html">Links</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<h2 id="week1">1) 02/03/09-06/03/09</h2>
+			<div>
+				<h3>02/03/09</h3><span class="titleinfo">Introduction to <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr> and Sakai</span>
+				<p>When we arrived at <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr> we got a short tour around the office by Katy and Stephanie. They showed us where we would work and which computers we will be using during our stay. When the tour was finished, we wrote an introduction letter that we hang in the kitchen so everyone at <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr> would be able to read it.</p>
+				<p>When we finished our letter, Nicolaas gave us an introduction to <a href="http://sakaiproject.org/portal">Sakai</a>, an open-source learning environment. It's a set of software tools that help instructors, researchers and students to collaborate online. It is runs <a href="http://tomcat.apache.org/">Apache Tomcat</a> that provides a Java HTTP web server environment for Java. On the front-end they mainly use <a href="http://jquery.com/">jQuery</a>, probably the best JavaScript library in the world that communicates through <abbr title="Representational State Transfer">REST</abbr> services with the back-end.</p>
+				<p>At the end, Nicolaas explained our first assignment. We had to develop a discussion widget that could be added on a page on Sakai. To make that widget, we had to use different kinds of technologies like <abbr title="Asynchronous JavaScript and XML">Ajax</abbr> and <abbr title="Content Repository API">JCR</abbr>, which is a type of Object Database tailored to the storage, searching, and retrieval of hierarchical data.</p>
+				<p>Afterwards we got started by installing Sakai on our computers. You can <a href="content/020309_Sakai_running.rtf">download</a> an adjusted version of the <a href="http://groups.google.com/group/sakai-kernel/web/k2-quick-start">Quick Start guide</a>.</p>
+				<h3>03/03/09</h3><span class="titleinfo">Getting started</span>
+				<p>We installed <a href="http://www.aptana.com/">Aptana Studio</a>, an IDE for the development of web applications. We use this program to write our JavaScript. The biggest benefit is the support for JavaScript libraries like jQuery and prototype.</p>
+				<ul>
+					<li>Implemented a hello world from Belgium widget into Sakai.</li>
+					<li>We made our first post (only with a subject and message) on a page in Sakai.</li>
+					<li>We received our Hermes and Raven account so we have access to our e-mail.</li>
+				</ul>
+				<h3>04/03/09</h3><span class="titleinfo"><abbr title="JavaScript Object Notation">JSON</abbr> and Trimpath JST</span>
+				<ul>
+					<li>Implementing <abbr title="JavaScript Object Notation">JSON</abbr> into our JavaScript and rendering our pages with <a href="http://code.google.com/p/trimpath/wiki/JavaScriptTemplates">Trimpath JavaScript Templates</a>.</li>
+					<li>Adding functionality to our posts: deleting and replying.</li>
+				</ul>
+				<h3>05/03/09</h3><span class="titleinfo">Clean up code</span>
+				<p>Today we got a review from Nicolaas about the code we have written so far.</p>
+				<ul>
+					<li>Being able to run Sakai on a Windows PC by installing the JDK 1.5 instead of the 1.6</li>
+					<li>Cleaning up our code: no in-line <abbr title="Cascading Style Sheets">CSS</abbr>, first use hide() than show() to avoid flickering and removing prototypes.</li>
+					<li>We made an introduction of ourselves during the weekly meeting.</li>
+				</ul>
+				<h3>06/03/09</h3><span class="titleinfo">Design and more cleaning up</span>
+				<p></p>
+				<ul>
+					<li>Cleaning up the code: removing in-line JavaScript and hard coded English words in our JavaScript.</li>
+					<li>Using 1 Trimpath template for our posts instead of two (first post vs. replies) that were nearly identical.</li>
+					<li>Implementing the widget into the new design and adding <abbr title="Cascading Style Sheets">CSS</abbr>.</li>
+					<li>Fixed the issue that you were able to click the edit button twice.</li>
+				</ul>
+			</div>
+			<h2 id="week2">2) 09/03/09-13/03/09</h2>
+			<div>
+				<h3>09/03/09</h3><span class="titleinfo"><abbr title="Internationalization">I18N</abbr> and contributed patch</span>
+				<p>Today was the first day of Geert, another Belgian student. In the morning Nicolaas had a meeting with me and Geert where he told me to explain to Geert how Sakai works and how to get everything up and running. Next to that I also had to implement some modifications.</p>
+				<ul>
+					<li>Removed names out of the JavaScript file so internationalization was possible.</li>
+					<li>Added multi line to replies.</li>
+					<li>When replying, add 'RE:' to the subject.</li>
+					<li>Remove hide all and show all when the post has no replies.</li>
+				</ul>
+				<h3>10/03/09</h3><span class="titleinfo">Comments with indentation</span>
+				<p>I had to totally convert our 1 post and some replies to 1 post and replies where it was possible for the user to reply to other replies. This was a tough job to do because I had to change almost all of the code.</p>
+				<ul>
+					<li>Add a link to the profile page of a user that posted.</li>
+					<li>Making it possible to have a reply on a reply.</li>
+				</ul>
+				<h3>11/03/09</h3><span class="titleinfo">Deleting comments in the new system</span>
+				<ul>
+					<li>Replacing the id's of the div _ separated instead of point separated.</li>
+					<li>Being able to delete replies in the new system (with indentation).</li>
+				</ul>
+				<h3>12/03/09</h3><span class="titleinfo">Introduction to poll widget</span>
+				<p>Nicolaas introduced me this morning to the poll widget and gave me the complete designs. Before I started with programming I first noted all my questions and remarks on a paper. This was an opposite approach than my first programming assignment, but seemed to be the better one. One example is that on the design the headers of the dialog box were adjustable, but in fact that was not (yet) possible. So I discussed this issue with Oscar, the lead designer of the poll widget.</p>
+				<ul>
+					<li>Making it possible to edit a reply inside the new system.</li>
+					<li>Getting the designs of the poll widget from Nicolaas.</li>
+					<li>Going over some issues and remarks about the widget with Nicolaas and Oscar.</li>
+				</ul>
+				<h3>13/03/09</h3><span class="titleinfo">Designing the poll widget and finishing the discussion widget</span>
+				<p>At 4pm we had a meeting with John, the <abbr title="chief executive officer">CEO</abbr> of <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr>. He seemed quite happy about our progress but he especially liked the woogie widget and picture resizing things from Simon.<br />At 5pm Nicolaas asked me to add "edited by" to the discussion widget. Which I finished around 8pm in the evening.</p>
+				<ul>
+					<li>Designing the first screen of the poll widget in <abbr title="Cascading Style Sheets">CSS</abbr> and <abbr title="Extensible Hypertext Markup Language">XHTML</abbr>.</li>
+					<li>Adding functionality to the first screen:
+						<ul>
+							<li>Loading everything with a <abbr title="JavaScript Object Notation">JSON</abbr> object and JST templates into the XHTML page with jQuery.</li>
+							<li>Adding the "Add new option" and the remove option to the first page.</li>
+							<li>Customizing the jQuery datepicker theme for our design.</li>
+							<li>Being able to choose between the different Poll types.</li>
+							<li>Making a customized drop down for the hours and minutes.</li>
+						</ul>
+					</li>
+					<li>Add "edited by" to the discussion widget.</li>
+				</ul>
+			</div>
+			<h2 id="week3">3) 16/03/09-20/03/09</h2>
+			<div>
+				<h3>16/03/09</h3><span class="titleinfo">Generate pie chart + introduction to survey.</span>
+				<p>My goal of the day was to find a useful program or service to generate different kinds of charts. Eventually we had to choose between plotkit and the google chart api. We choose the latter for different reasons. The main reason is that it doesn't use much resources. Plotkit needed the MochiKit, a JavaScript library and excanvas.js, a tool from google to make canvas work in Internet Explorer 6.<br />Today I also was introduced to 2 Germans from Ostrakon. The product we had to work with was Indicate2, an online survey tool.</p>
+				<ul>
+					<li>Making a general function to save input text fields, check boxes, radio buttons and text areas.</li>
+					<li>Being able to generate a pie chart.</li>
+					<li>Introduction to indicate 2.</li>
+					<li>Writing the first lines of code for the survey poll.</li>
+				</ul>
+				<h3>17/03/09</h3><span class="titleinfo">Finishing the survey widget (version 1)</span>
+				<p>I had to finish the survey widget as fast as possible so we would be able to give a little showcase to Nicolaas, Ian and John. Afterwards we had a meeting from 2pm till around 3pm about the future of Indicate2 and <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr>. It was very instructive to learn more about the internet infrastructure of <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr> and the different approaches to have a faster communication between Indicate2 and Sakai.</p>
+				<ul>
+					<li>Finish the survey widget.</li>
+					<li>Meeting with the 2 people from Ostrakon, Nicolaas, Ian and John.</li>
+					<li>Updating some design issues from the poll widget.</li>
+				</ul>
+				<h3>18/03/09</h3><span class="titleinfo">Modifications to poll widget and survey widget (version 2)</span>
+				<p>Yesterday it was already possible for us to have a communication between Sakai and Indicate2. But we had a major problem with it: speed. It took at least 2 seconds, sometimes up to 4, for each request to the server. It had to be faster, so the shortest solution was to install their php server on my Mac. The difference in speed was extreme: now it took only about 40 milliseconds to make a request.</p>
+				<ul>
+					<li>Making the advanced settings not visible as default.</li>
+					<li>Install MAMP, a software bundle for Mac with Apache, Mysql and PHP included.</li>
+					<li>Changing several settings in the survey widgets like the url and some querystrings.</li>
+					<li>Little showcase to John and Nicolaas with the improved speed.</li>
+					<li>Asking Guy to set up an svn to upload all my folders and files:
+						<ul>
+							<li>Rest - Contains all the rest/soap services.</li>
+							<li>Sakai - The survey widget, an example of how it can be implemented in Sakai.</li>
+							<li>Proxy - Contains the proxy server that is needed between Sakai and the rest service (from Simon).</li>
+						</ul>
+					</li>
+				</ul>
+				<h3>19/03/09</h3><span class="titleinfo">Improving the poll widget and meeting</span>
+				<p>During our weekly meeting we learned that we normally would be working on the next version on Camtools and that CARET has been chosen for some projects by the Google summer of code.<br />Together with Oscar we discussed the design of the poll widget.</p>
+				<ul>
+					<li>Being able to add the widget and vote.</li>
+					<li>Select the good polltype when it is chosen.</li>
+					<li>Finishing the text view.</li>
+					<li>Disable the possibility to adjust input dates, hours and minutes (readonly = true) - Nicolaas.</li>
+					<li>Made some design modifications to the widget.</li>
+				</ul>
+				<h3>20/03/09</h3><span class="titleinfo">Adding features to poll and getting started with Java</span>
+				<p>In the afternoon Simon helped me to install Eclipse, and <abbr title="Integrated development environment">IDE</abbr> for Java development and the Maven integration for Eclipse. Next to that he also explained me the structure of the Sakai back end. During the day, I added several features to the poll widget.</p>
+				<ul>
+					<li>Install eclipse and import the Sakai project.</li>
+					<li>Make the start date and stop date work in the poll widget.</li>
+					<li>If you press enter in the last option field, automatically add an extra field.</li>
+					<li>Being able to edit a vote and make sure the users can not see the chart view if that option is chosen.</li>
+					<li>Small talk with Nicolaas about future projects.</li>
+				</ul>
+			</div>
+			<h2 id="week4">4) 23/03/09-27/03/09</h2>
+			<div>
+				<h3>23/03/09</h3><span class="titleinfo">Finish poll and beginning with import contacts.</span>
+				<ul>
+					<li>Adding placeholder function to poll widget.</li>
+					<li>Add existing item: poll.</li>
+					<li>Send weekly reports to <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr> tech mailing list.</li>
+					<li>Research on authentication for google mail.</li>
+				</ul>
+				<h3>24/03/09</h3><span class="titleinfo">Import contacts: google mail</span>
+				<p>Today I tried to import all the emails from a google mail user. Everything worked fine on a non-Sakai website, but it didn't work when I tried to implement it as a Sakai dashboard widget. The main problem was that I didn't have any control of the sequence in which the JavaScript files were loaded.</p>
+				<ul>
+					<li>Testing out the different possibilities for authentication with google mail.</li>
+					<li>Make a working example on how to import google contacts.</li>
+				</ul>
+				<h3>25/03/09</h3><span class="titleinfo">Import contacts: Windows Live Mail and twitter status.</span>
+				<p>I had the same issue as yesterday when I made an example on how to import contacts from Windows Live Mail. So Nicolaas allowed me to make a separate page which will take care of importing contacts in general. Next to that I also made a twitter dashboard widget that was able update the status of Sakai with the latest status from twitter.</p>
+				<ul>
+					<li>Making a fully working example on importing contacts from Windows Live mail.</li>
+					<li>Starting with a twitter widget: synchronizing the Sakai and twitter status (one way).</li>
+				</ul>
+				<h3>26/03/09</h3><span class="titleinfo">Finish twitter widget and jsUnit.</span>
+				<p>Next to finishing the twitter widget, making it bidirectional and updating the <abbr title="Cascading Style Sheets">CSS</abbr>, I also had to write some tests in jsUnit. A Unit Testing framework for JavaScript.</p>
+				<ul>
+					<li>Finishing the twitter widget.</li>
+					<li>Writing some jsUnit tests.</li>
+					<li>Making some design modifications to the poll widget.</li>
+					<li>Weekly meeting.</li>
+				</ul>
+				<h3>27/03/09</h3><span class="titleinfo">JqUnit and integrating Windows Live Contacts.</span>
+				<p>Yesterday I used jsUnit but Antranig, someone at work told us to use jqUnit instead. It can do exactly the same as jsUnit but it adds some extra features.</p>
+				<ul>
+					<li>Writing jqUnit tests and send those and my JavaScript files to Aaron.</li>
+					<li>Integrating Windows Live Contacts.</li>
+				</ul>
+			</div>
+			<h2 id="week5">5) 14/04/09-17/04/09</h2>
+			<div>
+				<h3>14/04/09</h3><span class="titleinfo">JSLint</span>
+				<p>Today Aaron told me more about JSLint, a JavaScript program that looks for problems in other JavaScript programs. Which is very handy, but it took me a while until I made every JavaScript file I made pass through JSLint.</p>
+				<ul>
+					<li>Getting all the JavaScript files I made so far pass through JSLint:
+						<ul>
+							<li>Poll widget</li>
+							<li>Discussion widget</li>
+							<li>Twitter widget</li>
+						</ul>
+					</li>
+					<li>Making some modifications to the twitter widget.</li>
+				</ul>
+				<h3>15/04/09</h3><span class="titleinfo">Windows Live Contact API and Sakai Confluence</span>
+				<p>Nicolaas and I decided I should try out the Windows Live Contact API instead of the 
+Windows Live Contacts Control. The main issue I had with that control is that the user had to select each friend he/she wanted to add to his Sakai contacts separately. Although I tried really hard, I didn't manage to get it working. The last problem I had with it is that I didn't receive a token from the Windows Live services.</p>
+				<ul>
+					<li>Learning how to work with vi/vim.</li>
+					<li>Posting a best practices on Sakai confluence:
+						<ul>
+							<li>Trimpath JST</li>
+							<li>Hide the container tag</li>
+						</ul>
+					</li>
+					<li>Trying to let the Windows Live Contact API work inside Sakai:
+						<ul>
+							<li>Bypassing the Windows Live security by modifying the hosts file.</li>
+							<li>Converting the Windows Live Contacts Service to Java 5 (from Java 6).</li>
+						</ul>
+					</li>
+				</ul>
+				<h3>16/04/09</h3><span class="titleinfo">Import contacts: google mail</span>
+				<p>Too bad yesterday didn't turn out well for me since I didn't manage to get the Windows Live Contact API working inside Sakai. But today I got a fresh start with working on the import contacts from google mail.</p>
+				<ul>
+					<li>Working on the google mail widget:
+						<ul>
+							<li>Letting the google mail contacts api work with Sakai by using an iframe.</li>
+							<li>Bypassing the maximum length of a querystring by using multiple GET requests.</li>
+						</ul>
+					</li>
+					<li>Weekly team meeting where we got an assignment to tell more about our trip next week.</li>
+				</ul>
+				<h3>17/04/09</h3><span class="titleinfo">Introduction to chat</span>
+				<p>Nicolaas told me a bit more about my next assignment: writing the back-end for the chat functionality inside Sakai. Next to that I also helped Lode with installing Sakai and writing his first widget. Antranig, a JavaScript expert, told me about the live() function in the latest version of jQuery.</p>
+				<ul>
+					<li>Helping Lode with Sakai installation and hello world widgets.</li>
+					<li>Writing an article about JSLint on confluence.</li>
+					<li>Testing the speed of bind() vs. live() for a widget.</li>
+					<li>Fixing a bug inside the poll widget.</li>
+					<li>Doing some research on how the back-end of Sakai (java) works.</li>
+				</ul>
+			</div>
+			<h2 id="week6">6) 20/04/09-24/04/09</h2>
+			<div>
+				<h3>20/04/09</h3><span class="titleinfo">Confluence &amp; chat concept</span>
+				<p>Next to writing two sections on confluence, I also started to write some back-end code that the chat widget had to use. Especially the presence service, which had to be able to let the server know that the user was still online and to get the friends of a user, needed some modifications</p>
+				<ul>
+					<li>Writing two articles on confluence:
+						<ul>
+							<li>live() vs bind() in jQuery</li>
+							<li>JSDocs</li>
+						</ul>
+					</li>
+					<li>Start with modifying the presence service.</li>
+				</ul>
+				<h3>21/04/09</h3><span class="titleinfo">Finish presence service</span>
+				<p>Today I finished the presence service and made a script that everyone of the team could use if we were developing Sakai kernelrest services. The script made the build cycle much shorter and automated every step.</p>
+				<ul>
+					<li>Finished the presence service.</li>
+					<li>Made a script called buildsakai.sh.</li>
+				</ul>
+				<h3>22/04/09</h3><span class="titleinfo">Chat front-end</span>
+				<p>Apart from the back-end, the front-end also needed to have some changes. The code that already was written for the chat widget was awful. It was unreadable, badly documented and a lot of functionality in one method.</p>
+				<ul>
+					<li>Modifying the front end:
+						<ul>
+							<li>Being able to send a message.</li>
+							<li>Only show the friends that are accepted (not pending/blocked).</li>
+							<li>Make sure that if the container with all the friends auto adjusts.</li>
+							<li>When the user's name or status is too long, show three dots (&hellip;).</li>
+							<li>Fixed a small bug: when the friends window reloaded you first saw the alt text.</li>
+						</ul>
+					</li>
+				</ul>
+				<h3>23/04/09</h3><span class="titleinfo">Team meeting &amp; more front-end</span>
+				<p>I worked together with Simon to make sure I was able to only get the chat messages from a certain user that was sent from or to the current user. Next to that we also gave a small presentation about our trip to San Francisco</p>
+				<ul>
+					<li>Talked with Simon about the functionality for the chat messages.</li>
+					<li>Being able to get the messages that the current user has sent.</li>
+					<li>Posted two bugs on JIRA:
+						<ul>
+							<li>Tab accessibility issue: no focus on links or buttons.</li>
+							<li>Design breaks for long names in My Contacts section on the dashboard page.</li>
+						</ul>
+					</li>
+					<li>Made the <abbr title="Cascading Style Sheets">CSS</abbr> design for a chat window.</li>
+					<li>Giving a presentation with Simon about our trip to San Francisco.</li>
+				</ul>
+				<h3>24/04/09</h3><span class="titleinfo">Chat widget and chat status</span>
+				<ul>
+					<li>Added some <abbr title="Cascading Style Sheets">CSS</abbr> for the chat window.</li>
+					<li>Being able to see one message at a time.</li>
+					<li>Make a menu to update the chatstatus: online/busy or offline.</li>
+					<li>Learned how to work with svn diff.</li>
+				</ul>
+			</div>
+			<h2 id="week7">7) 27/04/09-01/05/09</h2>
+			<div>
+				<h3>27/04/09</h3><span class="titleinfo">Chatstatus and chat back-end</span>
+				<p>Today I had to throw away the code I wrote for the chatstatus back-end last Friday. There was an easier and faster way to update the chat status for a person. Apart from that I also wrote some back-end code for the chat widget. It won't be using the messages service from Simon anymore, but a service made especially for chat.</p>
+				<ul>
+					<li>Started to write the back-end code for the chat in Sakai:
+						<ul>
+							<li>Added an outboxhandler/listener that sends the chatmessages to the right users.</li>
+							<li>Made adjustments in the kernel so the new outboxhandler is loaded.</li>
+							<li>Changed the JCRMessagingService class.</li>
+						</ul>
+					</li>
+					<li>Learned how the logging system inside Sakai works.</li>
+					<li>Send some bugs on Sakai JIRA.</li>
+				</ul>
+				<h3>28/04/09</h3><span class="titleinfo">More back-end</span>
+				<p>Step by step everything comes together. This Tuesday I also had a deadline, which I made just in time, where I had to be able to send messages from one user to the other.</p>
+				<ul>
+					<li>Got some help from Simon on how to properly put everything in a Map in Java.</li>
+					<li>Make sure the read functionality works.</li>
+					<li>Being able to send messages from one user to the other (without sending all the messages each time)</li>
+				</ul>
+				<h3>29/04/09</h3><span class="titleinfo">Finalizing back-end</span>
+				<p>What at first seemed like a quite easy task was in fact much more difficult than I thought it would be. I had to open a chat window when the user had some unread messages. The hardest thing to do was to find out how they did it inside the old Sakai. It was very hard to debug because every 3 seconds, firefox had a freeze.</p>
+				<ul>
+					<li>Sort the messages by date.</li>
+					<li>Make everything faster with using more XPATH than filtering inside Java.</li>
+					<li>If the chat status of the current user updates, change it on whole the page.</li>
+					<li>Open the chat message window if someone has new messages.</li>
+					<li>Cleaned up some of the code inside chat.js.</li>
+				</ul>
+				<h3>30/04/09</h3><span class="titleinfo">Fixing issues</span>
+				<p>Fixing issues seems boring but it actually is kind of a nice thing to do (at least if you are able to fix them fast). I spend a lot of time during the past days on writing code that was valid, easy to read and easy to maintain. Today I was able to find out why I did that.</p>
+				<ul>
+					<li>Make sure the flashing shows up nice.</li>
+					<li>Send some updates to Nicolaas and Simon.</li>
+					<li>Being able to send the chat status and profile pic with the messages.</li>
+					<li>Fixed an issue together with Simon: the profile.json file was overwritten due to the patch service.</li>
+					<li>Change the <abbr title="Cascading Style Sheets">CSS</abbr> and <abbr title="Extensible Hypertext Markup Language">XHTML</abbr> for the chat status menu.</li>
+					<li>Weekly chat meeting with a very nice talk from Anne-Sophie, Tjhien and Oscar about their project (academic networking.</li>
+				</ul>
+				<h3>01/05/09</h3><span class="titleinfo">Some more front-end</span>
+				<ul>
+					<li>Got a side job from Aaron to make some modifications to a widget.</li>
+					<li>Make sure that the status from other users also updates in their chat window.</li>
+					<li>Discussed with Simon who will do which widget.</li>
+				</ul>
+			</div>
+			<h2 id="week8">8) 05/05/09-08/05/09</h2>
+			<div>
+				<h3>05/05/09</h3><span class="titleinfo">Start to clean up and solve a bug</span>
+				<p>This week we had to format and clean up our code in a certain way: the <abbr title="Cascading Style Sheets">CSS</abbr> selectors on top, writing the comments in the JavaScript documentation format and using a configuration file that contains all the <abbr title="Uniform Resource Locators">URLs</abbr> that we use in the widgets. Apart from that, all our <abbr title="Cascading Style Sheets">CSS</abbr> and <abbr title="Extensible Hypertext Markup Language">XHTML</abbr> had to be valid. There was also a general bug inside Sakai which I fixed. When you are changing your image, the image name was be undefined for a certain step in the process. So I added a check to see if it becomes undefined and then show the default smiley icon.</p>
+				<ul>
+					<li>Cleaning up chat.js:
+						<ul>
+							<li>Make everything pass through JSLint.</li>
+							<li>Add some more comments.</li>
+							<li>Combined and separated methods where necessary.</li>
+						</ul>
+					</li>
+					<li>Fixed the undefined image bug.</li>
+					<li>I send a bug on Sakai JIRA about not being able to click on changepic when the width of the window is less than 700 pixels wide.</li>
+				</ul>
+				<h3>06/05/09</h3><span class="titleinfo">Some more cleaning and modifications</span>
+				<ul>
+					<li>Cleaning up chat.js:
+						<ul>
+							<li>Removed most of the html out of the JavaScript file.</li>
+							<li>Putting the <abbr title="Cascading Style Sheets">CSS</abbr> selectors in groups.</li>
+							<li>Made some of the old functions (more) readable and sometimes faster.</li>
+						</ul>
+					</li>
+					<li>Started with the Link Tool widget for Aaron.</li>
+				</ul>
+				<h3>07/05/09</h3><span class="titleinfo">Rewriting the Link Tool widget and adding functionality</span>
+				<p>The Link Tool widget is in fact a renaming of a widget that Simon made: the remote content widget. In fact it has almost the same functionality, but I completely rewrote the javascript and html and made some modifications where necessary. The main functionality difference is the the addition of a querystring. So it is now possible to add some querystring key and values to your URL.</p>
+				<ul>
+					<li>Rewriting the Remote Content widget and name it Link Tool.</li>
+					<li>Html modifications:
+						<ul>
+							<li>Put everything inside Trimpath JST so it is reusable.</li>
+							<li>Changed the names of most of the id's and classes (so it is clear what they are).</li>
+						</ul>
+					</li>
+					<li>JavaScript modifications:
+						<ul>
+							<li>Added more comments.</li>
+							<li>Rewritten most of the functions so they work with Trimpath (makes them a lot smaller).</li>
+							<li>Putted everything in organized groups.</li>
+						</ul>
+					</li>
+					<li>Added license information to the files.</li>
+					<li>Posted the final version to Nicolaas and Aaron.</li>
+				</ul>
+				<h3>08/05/09</h3><span class="titleinfo">Check wookiechat widget and improved chat.js</span>
+				<p>Today Nicolaas ordered us to check each others code and give comments about them. Simon checked my chat widget and I checked his wookiechat widget. When we finished checking them, we adjusted the code from the other person (of course after asking him why he did it in such a way).</p>
+				<ul>
+					<li>Cleaned up the tangler widget.</li>
+					<li>Checked the wookiechat widget from Simon and made some modifications.</li>
+					<li>Simon checked the chat widget and added some comments.</li>
+					<li>Made some changes myself to the chat widget (removed some old code that did twice the same thing).</li>
+					<li>Started to clean up the discussion widget (removed most of the JSLint errors).</li>
+				</ul>
+			</div>
+			<h2 id="week9">9) 11/05/09-15/05/09</h2>
+			<div>
+				<h3>11/05/09</h3><span class="titleinfo">Code review and being reviewed</span>
+				<p>Just as last week we also have to clean up code this week. The main widgets that I had to clean up were discussion and poll. Next to that I also had to clean up some widgets that Nicolaas made. Today I also tried to run Sakai on a windows vista PC. To our surprise everything worked well. We tested this because there were some issues on my laptop to run Sakai on it. Because the PC was terribly slow, I just made a remote desktop connection from my mac to that slow PC so I was able to do some multitasking</p>
+				<ul>
+					<li>Installed Sakai on a vista PC.</li>
+					<li>More cleaning in the discussion widget.</li>
+					<li>Some small changes in chat and link tool widget.</li>
+				</ul>
+				<h3>12/05/09</h3><span class="titleinfo">Modifications to discussion and JSLint research</span>
+				<ul>
+					<li>Made some modifications and did some more cleaning the discussion widget.
+						<ul>
+							<li>Add /*global to parse through JSLint instead of making functions with nothing in them.</li>
+							<li>Made it possible for users that weren't logged in to see the posts but not edit or delete them or reply to them.</li>
+							<li>Show the profile images next to the name of the poster.</li>
+						</ul>
+					</li>
+					<li>Found a neat way to clone JavaScript objects with jQuery.</li>
+					<li>Research on best practices for JSLint.</li>
+				</ul>
+				<h3>13/05/09</h3><span class="titleinfo">More reviewing and poll widget</span>
+				<p>It was very clear to see the difference between the discussion and poll widget before I cleaned then. It seems that I have learned a lot over the past couple of months about how to write readable and maintainable code. Sometimes I really didn't know how my code in the discussion widget ever could have worked. The cleaning process for the poll widget was also much faster than the discussion widget.</p>
+				<ul>
+					<li>Cleaning up the poll widget and make that widget parse through JSLint.</li>
+					<li>Making the option color circles feature cross browser.</li>
+					<li>Reviewed the send message widget of Simon.</li>
+					<li>Installed Safari 4 and updated my Mac with the latest OS X version.</li>
+					<li>Got my next job on making templates for sites in Sakai.</li>
+				</ul>
+				<h3>14/05/09</h3><span class="titleinfo">Starting with templates</span>
+				<p>Today I had to add some functionality to the existing site service. When you create a site you had to have the opportunity to choose between different templates. Those templates were useful to the user because they didn't have to start a site from scratch.</p>
+				<ul>
+					<li>Reviewing Simon's wookieforum widget and the sites widget which he cleaned up.</li>
+					<li>Started to clean up the createsite widget.</li>
+					<li>Made some first changes in the back-end to provide template support for sites.</li>
+					<li>Weekly meeting about Curriculum design and the Teaching Office Database.</li>
+				</ul>
+				<h3>15/05/09</h3><span class="titleinfo">Templates for sites in Sakai</span>
+				<p>Making the back-end work with templates wasn't that easy as it seemed to be. There were many different sections that used the sites service and they all were very different in structure. But I succeeded and at the end of the day I got a working example.</p>
+				<ul>
+					<li>Did some useful reading about the latest developments in Sakai (Sling).</li>
+					<li>Made the templates work in Sakai:
+						<ul>
+							<li>Being able to add pages, page configuration and navigation files through templates.</li>
+							<li>Set the permissions on the widget folder (e.g. so everyone can post on a blog widget).</li>
+							<li>Made some modifications to the front-end.</li>
+						</ul>
+					</li>
+					<li>Finished cleaning up the createsite widget but still need to test it thoroughly.</li>
+				</ul>
+			</div>
+			<h2 id="week10">10) 18/05/09-22/05/09</h2>
+			<div>
+				<h3>18/05/09</h3><span class="titleinfo">Test createsite widget and code review</span>
+				<p>After thoroughly testing the createsite widget, I cleaned up the myfriends widgets. This widget allows you to see a list of six people and when there are more, a show more link becomes visible. It was a fairly small widget so I finished it and also started cleaning up the navigation widget.</p>
+				<ul>
+					<li>Reviewed the RSS widget from Geert.</li>
+					<li>Clean up the myfriends widget and make modifications wherever necessary.</li>
+					<li>Started to clean up the navigation widget.</li>
+				</ul>
+				<h3>19/05/09</h3><span class="titleinfo">Code review and new assignment</span>
+				<p>After I made some reviews of the widget code from Simon &amp; Geert, Nicolaas gave me a new assignment. I had to make a Sakai progress site where people would be able to see the progress of some feeds. When you clicked on a feed, the user could see some code examples and see some comments. There are also a limited set of users that can log-in. Those users are able to add and edit feeds and their own comments. The framework I had to use was Jaxer.</p>
+				<ul>
+					<li>Code review: search (Simon) &amp; add site management (Lode).</li>
+					<li>Installed the standalone version of Jaxer, which I didn't need because it was already bundled with Apanta Studio.</li>
+					<li>Made a hello world example.</li>
+					<li>Drew the database schema.</li>
+					<li>Started the Sakai progress site by making connection with the database and inserting users.</li>
+				</ul>
+				<h3>20/05/09</h3><span class="titleinfo">Database setup and feeds</span>
+				<p>Today I set up the database structure in Jaxer with a MySQL database. Jaxer has currently two possibilities you can choose from: SQLite, a file-based database, or MySQL, which has better performance when used by multiple users.</p>
+				<ul>
+			   		<li>Set up the database structure and only create the database if it didn't exist.</li>
+					<li>Made the feed section for the Sakai progress site:
+						<ul>
+							<li>Show a list of feeds.</li>
+							<li>Add a  feed (currently for everyone).</li>
+							<li>When you click on a feed, you are able to see all the information about it.</li>
+						</ul>
+					</li>
+					<li>Implemented the Trimpath JST (JavaScript Templates) on the server-side of Jaxer.</li>
+					<li>Doing some research on how to implement authentication in a Jaxer project.</li>
+				</ul>
+				<h3>21/05/09</h3><span class="titleinfo">Comments, code tags and user authentication</span>
+				<p>Working with Jaxer has been a pleasure so far, I just wondered why they didn't made it any earlier. The only thing I would like to have is a better way of debugging in the back-end. Apart from being able to send comments to a feed, I also implemented a syntax highlighter and user authentication. Nicolaas helped me this evening with replacing \n tags by BR tags outside the [code] tags.</p>
+				<ul>
+					<li>Adding comment functionality for the Sakai progress site.</li>
+					<li>Let the user add code with syntax highlighting.</li>
+					<li>Added user authentication: log-in and save user id in a session.</li>
+					<li>Attended the weekly meeting where some people talked about the Museum Computer Group.</li>
+					<li>Started with adding some basic <abbr title="Cascading Style Sheets">CSS</abbr> to design the site.</li>
+				</ul>
+				<h3>22/05/09</h3><span class="titleinfo">Design, progress bar and editing</span>
+				<p>Yesterday Nicolaas saw my first design changes for the Sakai progress site. He liked it, but he also wanted some color into the site so I called in the help from Lode. I also implemented a plug-in for the progress bar and I made it possible for users to edit a feed and comments they made to a feed.</p>
+				<ul>
+					<li>Designing the Sakai progress site together with Lode.</li>
+					<li>Implementing a plug-in to show a graphical progress bar.</li>
+					<li>Letting the users modify a feed and the comments they made.</li>
+					<li>I send the final Sakai progress site to Nicolaas.</li>
+				</ul>
+			</div>
+			<h2 id="week11">11) 26/05/09-30/05/09</h2>
+			<div>
+				<h3>26/05/09</h3><span class="titleinfo">Sakai progress modifications &amp; adding feeds</span>
+				<p>Sadly enough, Nicolaas was sick today so all our communication had to happen with Skype. My primary task today (and probably tomorrow) was to get all the existing feeds into my Sakai progress site.</p>
+				<ul>
+					<li>Send my weekly report to the CARET mailing list.</li>
+					<li>Create a database dump and send it to Nicolaas.</li>
+					<li>Add existing feeds to the Sakai progress site.</li>
+					<li>Show the category in the list of feeds.</li>
+					<li>Order the feeds first by category and then by title.</li>
+					<li>Attended a presentation about improving library search.</li>
+				</ul>
+				<h3>27/05/09</h3><span class="titleinfo">Finished adding feeds &amp; catching up</span>
+				<p>Today Katy made an article about the Belgian students at CARET. She had a small interview with the four of us. Apart from that I also finished adding the feeds to the Sakai progress site and I did some catching up on the latest developments in Sakai.</p>
+				<ul>
+					<li>Interview with Katy.</li>
+					<li>Added the rest of the feeds to the Sakai progress site (_rest &amp; sdata).</li>
+					<li>Posted a bug on the Aptana Jira page about importing an existing web application from the cloud.</li>
+					<li>Read some articles on the latest back-end developments.</li>
+				</ul>
+				<h3>28/05/09</h3><span class="titleinfo">Site management appearance</span>
+				<p>Simon and Geert already made their part of the site management: site settings and edit the members for a site. My task was to make the appearance side of the site management. Each site would have its own theme and picture to make it more personal.</p>
+				<ul>
+			   		<li>Updated the bug on Aptana Jira with some more details.</li>
+					<li>Started with the appearance site management:
+						<ul>
+							<li>Removed flat HTML syntax and replaced it with JavaScript code.</li>
+							<li>Made the links working on the flat page.</li>
+							<li>Front-end change the template (back-end has yet to be done).</li>
+						</ul>
+					</li>
+					<li>Weekly meeting about writing weekly reports and about which projects we want to know more about at <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr>.</li>
+				</ul>
+				<h3>29/05/09</h3><span class="titleinfo">Changing the picture of the site</span>
+				<p>I mainly updated some features of the site and I changed a lot of <abbr title="Cascading Style Sheets">CSS</abbr> to make it look good in most of the browsers.</p>
+				<ul>
+					<li>Completely rewrote the changepic upload feature from Simon.</li>
+					<li>Added the feature the upload pictures on the site management appearance page.</li>
+					<li>Changed some settings to make the jQuery imgAreaSelect plug-in accessible with the keyboard.</li>
+				</ul>
+			</div>
+			<h2 id="week12">12) 01/06/09-05/05/09</h2>
+			<div>
+				<h3>01/06/09</h3><span class="titleinfo">Catching up and being sick</span>
+				<p>When I woke up this morning I felt really sick but I still decided to go to work. When I was at work I was getting sicker and sicker so Nicolaas advised me to go to the doctor, which I eventually did. In the afternoon, after having tons of sleep, I did some Sakai resources and found a lot of very useful hyperlinks. When I was browsing through the forums of Sakai nabble, I found out that there was a webinar going on about Sakai. So I attended that webinar which was given by the main Sakai leader.</p>
+				<ul>
+					<li>Send my weekly report to the <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr> mailing list.</li>
+					<li>Making some small changes to the appearance functionality.</li>
+					<li>attended a webinar about Sakai.</li>
+					<li>Surfed the web to find some more information about the Sakai progress and back-end functionality.</li>
+				</ul>
+				<h3>02/06/09</h3><span class="titleinfo">Get back to work</span>
+				<p>I really hate being sick so as soon as I got any better, I went back to work. Sadly enough I had a flat tire so it took me a while to get to work.</p>
+				<ul>
+					<li>Give a sick note to Katy.</li>
+					<li>Notify everyone that I was back.</li>
+					<li>Talked with Nico about some thoughts I had about some features in Sakai (like connection groups, internationalization and rSmart).</li>
+					<li>Make sure the image is uploaded correctly each time.</li>
+				</ul>
+				<h3>03/06/09</h3><span class="titleinfo">Crop pictures and wrapping up</span>
+				<p>Today I added the functionality to let the user crop the image and save that image as the site image. I also started to develop the skins feature to have a little preview off skin the user will add. Apart from those updates, I also changed some of the design of the pop-up to make it more accessible for the user.</p>
+				<ul>
+					<li>In the morning I had a talk with John about a job opportunity at <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr> next year.</li>
+			   		<li>Let the user crop the site image.</li>
+					<li>Started to develop the skins feature.</li>
+					<li>Change some of the design in the pop-up.</li>
+					<li>Fixed a bug (with Simon) in the proxy service that made it impossible to make a POST with HTTP basic authentication.</li>
+					<li>Made some icons for the site widgets and send them to Nicolaas.</li>
+				</ul>
+				<h3>04/06/09</h3><span class="titleinfo">Finishing the site appearance feature</span>
+				<p>I finished the complete site appearance management page today. It was actually not that easy because I had to make all the old functionality still work and the hardest part was do dynamically load the theme.</p>
+				<ul>
+					<li>Talked with Nicolaas on how he manages his taxes in Belgium while working in the UK.</li>
+					<li>Posted a question on stackoverflow about the necessity to add quotes to a <abbr title="JavaScript Object Notation">JSON</abbr> name.</li>
+					<li>Got a very nice tip on how to check for valid <abbr title="JavaScript Object Notation">JSON</abbr> syntax (JSONLint).</li>
+					<li>Together with Nicolaas, I succeeded to make the themes work for every site.</li>
+					<li>Weekly meeting about camtools and academic networking in general.</li>
+					<li>A little chat with Nico about my next tasks: making a WordPress site, cleaning up widgets after review and making a Cambridge university skin for Sakai.</li>
+				</ul>
+				<h3>05/06/09</h3><span class="titleinfo">Finish the skin and start with the WordPress blog</span>
+				<p>Making the skin for the Sakai site was actually not that hard, so I finished that first. Afterwards I had a talk with Harriet about a site she wanted to have for Curriculum Design. Now they already had a blog, but they wanted a site. They wanted the same template as the <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr> website so I talked with Dan about how he did certain things (like the boxes on the site). Afterwards he sent me the entire website and gave me editor rights to the current site.</p>
+				<ul>
+					<li>Finish the Cambridge University skin for Sakai and send it to Nico.</li>
+					<li>Made an additional icon for the JCLR widget.</li>
+					<li>Talk with Harriet about the site she wants for Curriculum Design.</li>
+					<li>Set up WordPress and implement the old blog in the new design.</li>
+					<li>Start to make site structure for the new WordPress site.</li>
+				</ul>
+			</div>
+			<h2 id="week13">13) 08/06/09-12/05/09</h2>
+			<div>
+				<h3>08/06/09</h3><span class="titleinfo">Development of the Curriculum Design site</span>
+				<p>The main thing I did today was working on the site for Curriculum Design. The template that Dan send me was in fact not that useful. It wasn't a generic template, it was a template that would only work with the current <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr> website. The only thing I got from it where the CSS styles, the footer template and the header template. As someone who already developed some websites, I discussed some of the changes I would like to make to the designs I got from Harriet. And in the afternoon, she told me they wanted to change the name of the site, but they didn't come up with a useful name yet.</p>
+				<ul>
+					<li>Send my weekly report to the <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr> mailing list.</li>
+					<li>Made a lot of modifications to the existing template to make it work with the current site.</li>
+					<li>Add the CSS and made some changes to it (to make it more consistent and cross-browser).</li>
+					<li>Made most of the pages:
+						<ul>
+							<li>About the team: added the two pictures and the content.</li>
+							<li>Project blog: implemented the old blog and changed CSS.</li>
+							<li>Keep updated: added the content and searched for Twitter WordPress plug-ins.</li>
+						</ul>
+					</li>
+					<li>Discussed the changes I wanted to make with Harriet:
+				  		<ul>
+							<li>Remove the home link to have more place for the top links.</li>
+							<li>Shorten the names for the top menu.</li>
+							<li>Add a logo to the bottom of the page. (I found out that Katy was working on that)</li>
+							<li>Asked her to add an excerpt to each post she would post on the blog.</li>
+						</ul>
+					</li>
+				</ul>
+				<h3>09/06/09</h3><span class="titleinfo">Finish the site and start hosting</span>
+				<p>Harriet told me she wanted to have the site by Thursday so she could show it to all the people that came to <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr> on that day. I really wanted to have all the back-end and front-end development done by today so I could start with the hosting tomorrow. In the afternoon I spoke with Sultan and she promised me the site would be online by five pm today. But she had some problems with the firewall so she was not able to do that. At the end of the day I gave a little preview to Amyas and Harriet. They still wanted some modifications and I finished those at the end of the day.</p>
+				<ul>
+					<li>Clean up some of the code I wrote yesterday and added some documentation.</li>
+					<li>Made the links that were external such as search, accessibility and privacy work on the website (from the University of Cambridge).</li>
+					<li>Add the following pages:
+						<ul>
+							<li>Find out more: added the content and the special boxes.</li>
+							<li>Home page: Added the contribute ideas part and the excerpt from the latest blog post.</li>
+							<li>Project reports: added the temporary content.</li>
+						</ul>
+					</li>
+					<li>Apart from adding new pages, I also made the Twitter feed work. Lode helped me to design the Twitter box.</li>
+					<li>Asked Sultan to help me to deploy the site online.</li>
+					<li>Made some modifications that Harriet and Amyas wanted:
+						<ul>
+							<li>Change the text align on the Find Out More page from justify to left.</li>
+							<li>Added archives and categories to the Project Blog.</li>
+							<li>Linked the contribute your ideas to the Get Involved page.</li>
+							<li>Added <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr> to the breadcrumb.</li>
+						</ul>
+					</li>
+					<li>Watched the Sakai webinar.</li>
+				</ul>
+				<h3>10/06/09</h3><span class="titleinfo">Deploy the Course Tools site</span>
+				<p>This morning I received an email from Amyas in which he mentioned the new name of the website: Course Tools. So I first changed the name everywhere on the site and afterwards I asked Sultan again to deploy my site online. She reassured me that the site would be online by the end of the day. We had a lot of difficulties, but in the end we succeeded.</p>
+				<ul>
+					<li>Changed the original name which was Curriculum Design to the new name: Course Tools.</li>
+			   		<li>Had several talks with Sultan about the deployment of the site:
+						<ul>
+							<li>Log in information for the MySQL database.</li>
+							<li>Get SSH access to the root of the website.</li>
+							<li>Make PHP work on Apache and enable the mod_rewrite module.</li>
+						</ul>
+					</li>
+					<li>As soon as I got access to the database and the place where the website was hosted, I uploaded the WordPress site.</li>
+					<li>Learned how to secure copy files to an external host.</li>
+					<li>Made a backup of everything I deployed online.</li>
+					<li>Got a fast introduction on the next project I would be working on: Wasp.</li>
+				</ul>
+				<h3>11/06/09</h3><span class="titleinfo">Achieved deadline and make widgets modifications</span>
+				<p>Harriet and Amyas where very pleased that I made the deadline and in the morning I added them to the site as WordPress users. During the day I made a lot of modifications to the widgets.</p>
+				<ul>
+					<li>Added Harriet and Amyas to the WordPress site.</li>
+					<li>Made a lot of modifications to the add contacts, discussion, create site and chat widget.</li>
+					<li>For the chat widget I also made some changes that weren't in the document. The hardest thing I did was only render the friends template if there was anything changed. The reason I did this was because of performance issues.</li>
+				</ul>
+				<h3>12/06/09</h3><span class="titleinfo">Widget modifications</span>
+				<p>Nicolaas sent me a code review two weeks ago that he and Oszkar made. Today I made all the modifications that were in that review and I started the wasp project by doing some research.</p>
+				<ul>
+					<li>Reformatted all the CSS for the widgets.</li>
+					<li>Made modifications to several widgets:
+						<ul>
+							<li>link tool</li>
+							<li>navigation</li>
+							<li>my friends</li>
+							<li>my profile</li>
+							<li>poll</li>
+							<li>remote content</li>
+							<li>sites</li>
+							<li>tangler</li>
+						</ul>
+					</li>
+					<li>Sent all the modifications as a patch to Nicolaas and ask him to commit it.</li>
+					<li>Started with the development of the wasp project by doing some research.</li>
+				</ul>
+			</div>
+            <h2 id="week14">14) 15/06/09-19/05/09</h2>
+			<div>
+				<h3>15/06/09</h3><span class="titleinfo">WASP project</span>
+				<p>The last week of my internship started and it has been great so far. With the starting of my last week, I had to make a project from scratch. The project is called WASP, which stands for 	 Writing Acceptable Scientific Papers. I use PHP as the main programming language and I have to use the TinyMCE JavaScript editor.</p>
+				<ul>
+					<li>Send my weekly report to the <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr> mailing list.</li>
+					<li>Made the MySQL database and inserted the data.</li>
+					<li>Showed a list of papers on the front page.</li>
+					<li>On the paper page you are able to see the content from the XML and navigate through the pages of the paper.</li>
+					<li>Made some modifications to the XML and the database after I discussed them with Nicolaas.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

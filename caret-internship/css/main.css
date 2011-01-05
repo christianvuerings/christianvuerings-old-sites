@@ -1,0 +1,123 @@
+/* CSS Internship - Christian Vuerings */
+/* General */
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font:90%/160% Georgia, "Times New Roman", Times, serif;
+	background-color: #f2f3ff;
+}
+img {
+	border:0;	
+}
+acronym, abbr {
+	border-bottom:1px dotted #919191;
+	cursor:help;
+}
+a {
+	color: #0a2838;
+	font-size: 103%;
+	padding: 2px 0;
+}
+a:hover {
+	text-decoration: none;
+}
+h1 {
+	font-size: 170%;	
+}
+h2 {
+	color: #0a2838;
+	font-size: 130%;
+	padding-bottom: 11px;
+}
+h3 {
+	color: #575757;
+	padding-top: 22px;
+	font-size: 110%;
+}
+h4 {
+	clear: both;
+	color: #717171;
+}
+/* Header */
+#header {
+	background-color: #0a2838;
+	margin-bottom: 35px;
+	padding-left: 35px;
+}
+#header h1 {
+	background: url(../images/logo.gif) no-repeat;
+	height: 66px;
+	width: 300px;
+}
+#header h1 span {
+	display: none;
+}
+/* Wrapper */
+#wrapper {
+	width: 999px;	
+}
+/* Menu */
+#menu {
+	background: url(../images/menu_ornament.gif) no-repeat bottom #ffffff;
+	float: left;
+	margin: 0 0 35px 35px;
+	padding-bottom: 58px;
+	width: 300px;
+}
+#menu ul li {
+	list-style-type: none;
+}
+#menu ul li a {
+	color: #0a2838;
+	display: block;
+	font-size: 130%;
+	padding: 22px 22px 11px 22px;
+	text-decoration: none;
+}
+#menu ul li a:hover, #menu ul .active a {
+	background-color: #0f3b52;
+	color: #ffffff;
+	text-decoration: underline;
+}
+#menu ul .active a {
+	background-color: #0a2838;
+}
+/* Content */
+#content {
+	background-color: #ffffff;
+	float: left;
+	margin: 0 0 35px 35px;
+	padding: 22px;
+	width: 580px;
+}
+#content .first {
+	margin-top: 22px;	
+}
+#content .titleinfo {
+	color: #575757;
+	float: left;
+	font-size: 80%;
+	padding-top: 26px;
+}
+#content p, #content ul {
+	clear: both;
+	line-height: 180%;
+	margin-bottom: 1em;
+}
+#content ul {
+	margin-left: 22px;
+}
+#content ul li {
+	padding-left: 5px;
+}
+#content h3{
+	float: left;
+	padding-right: 0.5em;
+	
+}
+/* Links */
+.links ul li a{
+	display: block;
+}

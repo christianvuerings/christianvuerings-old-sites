@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="nl" xml:lang="nl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="description" content="" />
+	<meta name="keywords" content="" />
+	
+	<link type="text/css" rel="stylesheet" href="css/main.css" media="screen" />
+	
+	<link rel="shortcut icon" href="" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.0/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#weeks").accordion({autoHeight: false});
+	});
+	</script>
+
+	<title>Christian Vuerings // Weekly reports</title>
+</head>
+<body>
+	<div id="wrapper">
+		<h1>Christian Vuerings // Weekly reports</h1>
+        
+        <div id="weeks">
+        	<h2><a href="#">Week 1: 02/03/09-06/03/09</a></h2>
+        	<div>
+				<h3>02/03/09</h3><span class="titleinfo">Introduction to <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr> and Sakai</span>
+                <p>When we arrived at <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr> we got a short tour around the office by Katy and Stephanie. They showed us where we would work and which computers we will be using during our stay. When the tour was finished, we wrote a intruduction letter that we hang in the kitchen so everyone at <abbr title="Centre for Applied Research in Educational Technologies">CARET</abbr> would be able to read it.</p>
+                <p>When we finisched our letter, Nicolaas gave us an introduction to <a href="http://sakaiproject.org/portal">Sakai</a>, an open-source learning environment. It's a set of sofware tools that help instructors, researchers and students to collaborate online. It is runs <a href="http://tomcat.apache.org/">Apache Tomcat</a> that provides a Java HTTP web server environment for Java. On the front-end they mainly use <a href="http://jquery.com/">jQuery</a>, probably the best javascript library in the world that communicates through <abbr title="Representational State Transfer">REST</abbr> services with the back-end.</p>
+                <p>At the end, Nicolaas explained our first assignment. We had to develop a discussion widget that could be added on a page on Sakai. To make that widget, we had to use different kinds of technologies like <abbr title="Asynchronous JavaScript and XML">Ajax</abbr> and <abbr title="Content Repository API">JCR</abbr>, which is a type of Object Database tailored to the storage, searching, and retrieval of hierarchical data.</p>
+                <p>Afterwards we got started by installing sakai on our computers. You can <a href="content/020309_Sakai_running.rtf">download</a> an adjusted version of the <a href="http://groups.google.com/group/sakai-kernel/web/k2-quick-start">Quick Start guide</a>.</p>
+                <h3>03/03/09</h3><span class="titleinfo">Getting started</span>
+                <p>We installed <a href="http://www.aptana.com/">Aptana Studio</a>, an IDE for the development of web applications. We use this program to write our javacript. The biggest benifit is the support for js libraries like jQuery and prototype.</p>
+                <ul>
+                	<li>Implemented a hello world from Belgium widget into Sakai.</li>
+                    <li>We made our first post (only with a subject and message) on a page in Sakai.</li>
+                    <li>We recieved our Hermes and Raven account so we have access to our e-mail.</li>
+                </ul>
+                <h3>04/03/09</h3><span class="titleinfo">JSON and Trimpath JST</span>
+                <ul>
+                	<li>Implementing JSON into our javascript and rendering our pages with <a href="http://code.google.com/p/trimpath/wiki/JavaScriptTemplates">Trimpath Javascript Templates</a>.</li>
+                    <li>Adding functionality to our posts: deleting and replying.</li>
+                </ul>
+                <h3>05/03/09</h3><span class="titleinfo">Clean up code</span>
+                <p>Today we got a review from Nicolaas about the code we have written so far.</p>
+                <ul>
+                	<li>Being able to run Sakai on a Windows pc by installing the JDK 1.5 instead of the 1.6</li>
+                    <li>Cleaning up our code: no inline css, first use hide() than show() to avoid flickering and removing prototypes.</li>
+                    <li>We made an introduction of ourselves during the weekly meeting.</li>
+                </ul>
+                <h3>06/03/09</h3><span class="titleinfo">Design and more cleaning up</span>
+                <p></p>
+                <ul>
+                	<li>Cleaning up the code: removing inline javascript and hardcoded English words in our javascript.</li>
+                    <li>Using 1 Trimpath template for our posts instead of two (first post vs. replies) that were nearly identical.</li>
+                    <li>Implementing the widget into the new design and adding css.</li>
+                    <li>Fixed the issue that you were able to click the edit button twice.</li>
+                </ul>
+            </div>
+            <h2><a href="#">Week 2: 09/03/09-13/03/09</a></h2>
+            <div>
+                <h3>09/03/09 </h3>
+                <h4>Yet to come</h4>
+            </div>
+        </div>
+        
+        <div id="links">
+        	<h2 title="A list of useful links">Links</h2>
+            <h3>Main</h3>
+            <ul>
+            	<li><a href="http://www.aptana.com/">Aptana Studio<span class="linkinfo"> - IDE for web application devolopment</span></a></li>
+                <li><a href="http://maven.apache.org/">Maven<span class="linkinfo"> - software project management and comprehension tool</span></a></li>
+                <li><a href="http://subversion.tigris.org/">Subversion<span class="linkinfo"> - Open source version control system</span></a></li>
+                <li><a href="http://code.google.com/p/trimpath/wiki/JavaScriptTemplates">Trimpath Javascript Templates <span class="linkinfo"> - APL / GPL open-source component that lets you have template-based programming</span></a></li>
+            </ul>
+            <h3>Sakai</h3>
+            <ul>
+            	<li><a href="http://groups.google.com/group/sakai-kernel/web/k2-quick-start">K2 - Quick Start</a></li>
+            	<li><a href="http://bugs.sakaiproject.org/jira/">Sakai Jira<span class="linkinfo"> - site for issue tracking</span></a></li>
+            	<li><a href="http://groups.google.com/group/sakai-kernel">Sakai Kernel - Google groups</a></li>
+            </ul>
+        </div>
+        <div id="downloads">
+        	<h2>Downloads</h2>
+            <ul>
+            	<li><a href="content/020309_Sakai_running.rtf">Adjusted version (including windows) of the of the K2 - Quick Start</a></li>
+            </ul>
+        </div>
+	</div>
+</body>
+</html>
